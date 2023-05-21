@@ -298,7 +298,7 @@ export class Audiocall {
     showCorrectWord() {
         (this.nextBtn as HTMLDivElement).textContent = 'Дальше';
         (this.wordImg as HTMLDivElement).innerHTML = `
-            <img src="https://react-learnwords-english.herokuapp.com/${this.wordVariants[this.wordIndex].image}">
+            <img src="https://https://rslangbe.fly.dev/${this.wordVariants[this.wordIndex].image}">
         `;
         (this.correctWord as HTMLDivElement).textContent = this.wordVariants[this.wordIndex].word;
         (this.audiocallWords?.children[this.wordIndex] as HTMLDivElement).style.backgroundColor = '#a7ff84';
@@ -316,7 +316,7 @@ export class Audiocall {
 
     wordVoice() {
         const audioSource = `
-            https://react-learnwords-english.herokuapp.com/${this.wordVariants[this.wordIndex].audio}
+            https://rslangbe.fly.dev/${this.wordVariants[this.wordIndex].audio}
         `;
         const audio = new Audio(audioSource);
         audio.play();
@@ -599,7 +599,7 @@ export class Audiocall {
                 this.wrongAnswers.forEach((item, i) => {
                     if (Number(current.audiocallWrong) === i) {
                         audioSrc = `
-                            https://react-learnwords-english.herokuapp.com/${item.audio}
+                            https://rslangbe.fly.dev/${item.audio}
                         `;
                     }
                 });
@@ -609,7 +609,7 @@ export class Audiocall {
                 this.correctAnswers.forEach((item, i) => {
                     if (Number(current.audiocallCorrect) === i) {
                         audioSrc = `
-                            https://react-learnwords-english.herokuapp.com/${item.audio}
+                            https://rslangbe.fly.dev/${item.audio}
                         `;
                     }
                 });

@@ -16,7 +16,7 @@ export class GetCards {
     async getUserCards() {
         const token = JSON.parse(window.localStorage.getItem('UserToken') as string).token;
         const userId = JSON.parse(window.localStorage.getItem('UserToken') as string).userId;
-        const rawResponse = await fetch(`https://react-learnwords-english.herokuapp.com/Users/${userId}/Words/`, {
+        const rawResponse = await fetch(`https://rslangbe.fly.dev/Users/${userId}/Words/`, {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`,

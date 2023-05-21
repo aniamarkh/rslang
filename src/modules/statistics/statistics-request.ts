@@ -19,7 +19,7 @@ export const createUserStatistics = async function () {
             longterm: JSON.stringify([{}]),
         },
     };
-    const response = await fetch(`https://react-learnwords-english.herokuapp.com/users/${userId}/statistics`, {
+    const response = await fetch(`https://rslangbe.fly.dev/users/${userId}/statistics`, {
         method: 'PUT',
         headers: {
             Authorization: `Bearer ${token}`,
@@ -35,7 +35,7 @@ export const createUserStatistics = async function () {
 export const updateUserStatistics = async function (data: { learnedWords: number; optional: StatisticsOptional }) {
     const token = JSON.parse(window.localStorage.getItem('UserToken') as string).token;
     const userId = JSON.parse(window.localStorage.getItem('UserToken') as string).userId;
-    const response = await fetch(`https://react-learnwords-english.herokuapp.com/users/${userId}/statistics`, {
+    const response = await fetch(`https://rslangbe.fly.dev/users/${userId}/statistics`, {
         method: 'PUT',
         headers: {
             Authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ export const getUserStatistics = async function () {
     const token = JSON.parse(window.localStorage.getItem('UserToken') as string).token;
     const userId = JSON.parse(window.localStorage.getItem('UserToken') as string).userId;
     if (token && userId) {
-        const response = await fetch(`https://react-learnwords-english.herokuapp.com/users/${userId}/statistics`, {
+        const response = await fetch(`https://rslangbe.fly.dev/users/${userId}/statistics`, {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`,

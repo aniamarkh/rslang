@@ -295,7 +295,7 @@ export class Textbook {
 
             card.innerHTML = `
                     <img class="word__img"
-                    src="https://react-learnwords-english.herokuapp.com/${item.image}" alt="word image">
+                    src="https://rslangbe.fly.dev/${item.image}" alt="word image">
                     <div class="word__text">
                         <div class="word__title">
                             <div class="word__title--top">
@@ -318,9 +318,9 @@ export class Textbook {
                         </div>
 
                         <div class="words__audio" data-audio=${item.id}>
-                            <audio src="https://react-learnwords-english.herokuapp.com/${item.audio}"></audio>
-                            <audio src="https://react-learnwords-english.herokuapp.com/${item.audioMeaning}"></audio>
-                            <audio src="https://react-learnwords-english.herokuapp.com/${item.audioExample}"></audio>
+                            <audio src="https://rslangbe.fly.dev/${item.audio}"></audio>
+                            <audio src="https://rslangbe.fly.dev/${item.audioMeaning}"></audio>
+                            <audio src="https://rslangbe.fly.dev/${item.audioExample}"></audio>
                         </div>
 
                         <br>
@@ -351,7 +351,7 @@ export class Textbook {
 
             card.innerHTML = `
                     <img class="word__img"
-                    src="https://react-learnwords-english.herokuapp.com/${item.image}" alt="word image">
+                    src="https://rslangbe.fly.dev/${item.image}" alt="word image">
                     <div class="word__text">
                         <div class="word__title">
                             <div class="word__title--top">
@@ -371,9 +371,9 @@ export class Textbook {
                         </div>
 
                         <div class="words__audio" data-audio=${item.id}>
-                            <audio src="https://react-learnwords-english.herokuapp.com/${item.audio}"></audio>
-                            <audio src="https://react-learnwords-english.herokuapp.com/${item.audioMeaning}"></audio>
-                            <audio src="https://react-learnwords-english.herokuapp.com/${item.audioExample}"></audio>
+                            <audio src="https://rslangbe.fly.dev/${item.audio}"></audio>
+                            <audio src="https://rslangbe.fly.dev/${item.audioMeaning}"></audio>
+                            <audio src="https://rslangbe.fly.dev/${item.audioExample}"></audio>
                         </div>
 
                         <br>

@@ -9,7 +9,7 @@ export const sendUserWord = async function (
 ) {
     const token = JSON.parse(window.localStorage.getItem('UserToken') as string).token;
     const userId = JSON.parse(window.localStorage.getItem('UserToken') as string).userId;
-    const response = await fetch(`https://react-learnwords-english.herokuapp.com/users/${userId}/words/${wordId}`, {
+    const response = await fetch(`https://rslangbe.fly.dev/users/${userId}/words/${wordId}`, {
         method: 'POST',
         headers: {
             Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ export const updateUserWord = async function (
 ) {
     const token = JSON.parse(window.localStorage.getItem('UserToken') as string).token;
     const userId = JSON.parse(window.localStorage.getItem('UserToken') as string).userId;
-    const response = await fetch(`https://react-learnwords-english.herokuapp.com/users/${userId}/words/${wordId}`, {
+    const response = await fetch(`https://rslangbe.fly.dev/users/${userId}/words/${wordId}`, {
         method: 'PUT',
         headers: {
             Authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ export const getUserWord = async function (wordId: string) {
     const token = JSON.parse(window.localStorage.getItem('UserToken') as string).token;
     const userId = JSON.parse(window.localStorage.getItem('UserToken') as string).userId;
 
-    const response = await fetch(`https://react-learnwords-english.herokuapp.com/users/${userId}/words/${wordId}`, {
+    const response = await fetch(`https://rslangbe.fly.dev/users/${userId}/words/${wordId}`, {
         method: 'GET',
         headers: {
             Authorization: `Bearer ${token}`,
@@ -71,7 +71,7 @@ export const removeUserWord = async function (wordId: string) {
     const token = JSON.parse(window.localStorage.getItem('UserToken') as string).token;
     const userId = JSON.parse(window.localStorage.getItem('UserToken') as string).userId;
 
-    await fetch(`https://react-learnwords-english.herokuapp.com/Users/${userId}/Words/${wordId}`, {
+    await fetch(`https://rslangbe.fly.dev/Users/${userId}/Words/${wordId}`, {
         method: 'DELETE',
         headers: {
             Authorization: `Bearer ${token}`,

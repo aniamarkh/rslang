@@ -42,4 +42,3 @@ const sprintController = new SprintController(sprintModel, sprintView);
 sprintController.init();
 
 listenPages.listen();
-console.log('Привет! Для удобства проведения скросс-чека мы расписали все пункты ТЗ и баллы за них в файле README.md :)');

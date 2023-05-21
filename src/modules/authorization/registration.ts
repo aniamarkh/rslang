@@ -66,7 +66,7 @@ export class Register {
 
     async sendData(data: { email: string | null; password: string | null } | null) {
         const userExist = document.querySelector('.user-exist_validation');
-        const dataResponse = await fetch('https://react-learnwords-english.herokuapp.com/users', {
+        const dataResponse = await fetch('https://rslangbe.fly.dev/users', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

@@ -265,9 +265,6 @@ export class SprintController {
         const wrontgAnswersLength = this.model.game.wrongAnswers.length;
 
         const percent = Math.round((correctAnswersLength / (correctAnswersLength + wrontgAnswersLength)) * 100);
-        console.log(correctAnswersLength);
-        console.log(wrontgAnswersLength);
-        console.log(percent);
         let maxSeries: number;
         if (!this.model.game.correctAnswersSeries.length && this.model.game.series) {
             maxSeries = this.model.game.series;

@@ -67,7 +67,7 @@ export class Authorize {
     }
 
     async sendData(data: { email: string | null; password: string | null } | null) {
-        const rawResponse = await fetch('https://react-learnwords-english.herokuapp.com/signin', {
+        const rawResponse = await fetch('https://rslangbe.fly.dev/signin', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -95,7 +95,7 @@ export class Authorize {
     async getData() {
         const token = JSON.parse(window.localStorage.getItem('UserToken') as string).token;
         const userId = JSON.parse(window.localStorage.getItem('UserToken') as string).userId;
-        const rawResponse = await fetch(`https://react-learnwords-english.herokuapp.com/users/${userId}`, {
+        const rawResponse = await fetch(`https://rslangbe.fly.dev/users/${userId}`, {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`,

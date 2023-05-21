@@ -138,3 +138,20 @@
   }
 
 }
+
+@media (max-width: 500px) {
+
+  .header {
+    height: auto;
+  }
+  .header__wrapper {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .nav__list {
+    gap: 5px;
+  }
+
+}
